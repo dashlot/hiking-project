@@ -15,10 +15,16 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    max-width: 1440px;
+}
+
 .whole-block {
     margin: 0 auto;
     width: 1440px; 
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -26,16 +32,19 @@
     padding-left: 72px;
     padding-right: 55px;
 }
+
 .links {
     position: absolute;
     left: 588px;
     top: 60px;
 }
+
 .links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;   
 }
+
 .links li {
     text-transform: uppercase;
     font-family: "Open Sans";
@@ -44,15 +53,18 @@
     font-size: 16.667px;  
     font-weight: bold;
 }
+
 .links a {
     text-decoration: none;
     color: rgb(84, 82, 79);
 }
+
 .search {
     position: absolute;
     left: 1200px;
     top: 40px;
 }
+
 .search-bar input {
     width: 183px;
     height: 52px;
@@ -70,7 +82,6 @@
     font-size: 25px;
     color: rgb(84, 82, 79);
 }
-
 /*
 .shape {
   background-image: url("img/shape1.png");
@@ -81,20 +92,23 @@
   z-index: 172;
 } */
 
-.main-banner-title  h1{
-    font-size: 59.283px;
+.title {
     font-family: "Open Sans Bold";
     color: rgb(222, 179, 126);
     line-height: 1.2;
-    text-align: left;
+    /* text-align: left; */
     text-shadow: 0px 5px 5px rgba(84, 82, 79, 0.22);
     text-transform: uppercase;
+  }
+
+h1.title {
     max-width: 400px;  
     position: absolute;
     left: 218px;
     top: 389.858px;
     z-index: 183;
-  }
+    font-size: 59.283px;
+}
 
 .subtitle {
         font-size: 23px;
@@ -113,12 +127,17 @@
         text-transform: uppercase;
 }
   
-.main-banner-button button {
+.button {
     font-size: 25px;
     font-family: "Open Sans Bold";
     color: rgb(119, 108, 100);
     line-height: 1.2;
     text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+button.button {
     position: absolute;
     left: 218px;
     top: 681px;
@@ -127,11 +146,9 @@
     width: 217px;
     height: 48px;
     border: 0px;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
+}
 
-  .main-banner-paragr {
+.paragraph {
     font-size: 19px;
     font-family: "Open Sans Italic";
     color: rgb(84, 82, 79);
@@ -144,22 +161,26 @@
     height: 63.81px;
     z-index: 181;
   }
-  
-  
-/* 
-  
-.Title {
-  font-size: 59.283px;
-  font-family: "OpenSans";
-  color: rgb(222, 179, 126);
-  line-height: 1.2;
-  text-align: left;
-  text-shadow: 0px 5px 5px rgba(84, 82, 79, 0.22);
-  -moz-transform: matrix( 1.54629318703535,0.00739011214916,-0.00738982767634,1.54623366447847,0,0);
-  -webkit-transform: matrix( 1.54629318703535,0.00739011214916,-0.00738982767634,1.54623366447847,0,0);
-  -ms-transform: matrix( 1.54629318703535,0.00739011214916,-0.00738982767634,1.54623366447847,0,0);
-  position: absolute;
-  left: 218px;
-  top: 389.858px;
-  z-index: 183;
+
+.letsgo-text {
+    text-align: center;
+    margin-top: 50px;
 }
+
+h2.title {
+    font-size: 50px;
+    color: rgb(226, 163, 85)
+}
+  
+.letsgo-body {
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(127, 119, 112);   
+}
+
+/*
+
+w 336 h 298
+
+
+
