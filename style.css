@@ -14,6 +14,8 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -178,9 +180,50 @@ h2.title {
     color: rgb(127, 119, 112);   
 }
 
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+}
+
+.card {
+    margin: 0px 42px 0px 42px;
+}
+
+.brown-color {
+    background-color: rgb(127, 119, 112);
+    width: 339px;
+    height: 227px;
+}
+
 /*
 
 w 336 h 298
+.Title {
+  font-size: 29px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  -moz-transform: matrix( 0.9982558667955,0,0,1,0,0);
+  -webkit-transform: matrix( 0.9982558667955,0,0,1,0,0);
+  -ms-transform: matrix( 0.9982558667955,0,0,1,0,0);
+  position: absolute;
+  left: 148.5px;
+  top: 1663.67px;
+  z-index: 139;
+}
+
+.Rectangle_ {
+  position: absolute;
+  left: 121px;
+  top: 1613px;
+  
+  z-index: 137;
+}
 
 
 
