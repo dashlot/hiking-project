@@ -94,6 +94,11 @@ body {
   z-index: 172;
 } */
 
+.main-banner img {
+    justify-content: center;
+
+}
+
 .title {
     font-family: "Open Sans Bold";
     color: rgb(222, 179, 126);
@@ -171,59 +176,88 @@ button.button {
 
 h2.title {
     font-size: 50px;
-    color: rgb(226, 163, 85)
+    color: rgb(226, 163, 85);
+    margin-bottom: 40px;
 }
   
 .letsgo-body {
     font-size: 18px;
     font-family: "Open Sans";
-    color: rgb(127, 119, 112);   
+    color: rgb(127, 119, 112);
+    margin-bottom: 56px;   
 }
 
 .cards {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
-    
 }
 
 .card {
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-size: 23.2 px;
     margin: 0px 42px 0px 42px;
-}
-
-.brown-color {
+    height: 421.6;
+    Width: 339px;
     background-color: rgb(127, 119, 112);
-    width: 339px;
-    height: 227px;
+    
 }
 
-/*
+.card h3 {
+    margin-bottom: 24px;
+}
 
-w 336 h 298
-.Title {
-  font-size: 29px;
+.lets-go-label {
+    padding: 57px 25px 73px 8px;
+}
+
+.lets-go button {
+    background-color: rgb(127, 119, 112);
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255,255,255);
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 217px;
+    height: 48px;
+    border: 0px;
+}
+
+.second-button {
+    text-align: center;
+    margin-top: 55px;
+}
+
+
+/* 
+.Button {
+  font-size: 58px;
   font-family: "OpenSans";
   color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.2;
-  -moz-transform: matrix( 0.9982558667955,0,0,1,0,0);
-  -webkit-transform: matrix( 0.9982558667955,0,0,1,0,0);
-  -ms-transform: matrix( 0.9982558667955,0,0,1,0,0);
+  text-transform: uppercase;
+  line-height: 0.907;
+  -moz-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
+  -webkit-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
+  -ms-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
   position: absolute;
-  left: 148.5px;
-  top: 1663.67px;
-  z-index: 139;
+  left: 508.585px;
+  top: 1903.739px;
+  z-index: 155;
 }
 
-.Rectangle_ {
-  position: absolute;
-  left: 121px;
-  top: 1613px;
-  
-  z-index: 137;
-}
+    
+
+
+
+
+
+
+
 
 
 
