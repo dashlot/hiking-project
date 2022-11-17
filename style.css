@@ -233,24 +233,85 @@ h2.title {
     margin-top: 55px;
 }
 
-
-/* 
-.Button {
-  font-size: 58px;
-  font-family: "OpenSans";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 0.907;
-  -moz-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
-  -webkit-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
-  -ms-transform: matrix( 0.39690093271823,0,0,0.39973867707769,0,0);
-  position: absolute;
-  left: 508.585px;
-  top: 1903.739px;
-  z-index: 155;
+.string {
+    display: flex;
 }
 
-    
+.discount-promo {
+    margin-top: 144px;
+}
+
+.discount-description-1 {
+    background-color: rgb(127, 119, 112);
+    width: 727.5px;
+    height: 780px;
+    z-index: 119;
+    padding-left: 60px;
+}
+
+.discount-description-2 {
+    background-color: rgb(222, 179, 126);
+    width: 727.5px;
+    height: 780px;
+    z-index: 119;
+    padding-left: 134px;
+}
+
+.discount-title {
+    font-size: 46.6px;
+    font-family: "Open Sans";
+    line-height: 1.2;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    padding-top: 198px;
+
+}
+
+.discount-body {
+    font-size: 25.6px;
+    font-family: "Open Sans";
+    line-height: 1.2;
+    text-align: left;
+    width: 401.6px;
+    color:rgb(255, 255, 255);
+    margin: 55px 0 55px 0;
+}
+
+.discount-button button {
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.72;
+  z-index: 127;
+  background-color: rgb(226, 163, 85);
+  width: 267.2px;
+  height: 60px;
+  z-index: 126;
+  border-radius: 30px;
+  border: 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*
+
+.Button {
+  font-size: 73px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.72;
+  z-index: 127;
+}
+
+.Shape {
+  
+}
+
+
+   
 
 
 
