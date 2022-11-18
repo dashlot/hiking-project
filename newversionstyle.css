@@ -176,16 +176,14 @@ h1, h2, p {
     background-color: rgb(127, 119, 112);
 }
 
+/*
 
-
-   
-
-
-
-
-
-
-
-
-
+.Body_Text {
+  font-size: 62.617px;
+  font-family: "OpenSans";
+  color: rgb(127, 119, 112);
+  line-height: 1.2;
+  
+  z-index: 158;
+}
 
