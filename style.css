@@ -139,10 +139,6 @@ h1, h2, p {
     max-width: 450px;
   }
 
-.letsgo {
-    
-}
-
 .top {
     text-align: center;
     margin-top: 40px;
@@ -167,6 +163,7 @@ h1, h2, p {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 55px;
 }
 
 .card {
@@ -174,8 +171,98 @@ h1, h2, p {
     align-self: center;
     justify-self: center;
     background-color: rgb(127, 119, 112);
+}    
+
+.card h3 {
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 44px;
+    padding-left: 12px;
 }
 
+.card p {
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    max-width: 300px;
+    padding-left: 12px;
+    padding-bottom: 72px;
+}
+
+.letsgo div form button {
+    font-size: 23px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.907;
+    background-color: rgb(127, 119, 112);
+    width: 267.2px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;   
+}
+
+.letsgo form {
+    text-align: center;
+}
+
+.discount {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+.discount-text {
+    background-color: rgb(127, 119, 112);
+    text-align: left;
+    align-self: center;
+    grid-auto-rows: minmax(500px, auto);
+}
+    
+
+.discount-text h2 {
+    font-size: 46.664px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.discount-text p {
+    font-size: 26.6664px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 0.81;
+    width: 594.013px;
+    height: 150.875px;
+}
+
+.discount-text form button {
+    font-size: 23px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.907;
+    background-color: rgb(226, 163, 85);
+    width: 267.2px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;   
+}
+
+/*
+
+
+  
 
 
    
