@@ -17,6 +17,13 @@ h1, h2, p {
     margin: 0px;
 }
 
+h2 {
+    font-size: 46.664px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2; 
+}
+
 .whole-page {
     width: 1440px;
     margin: 0 auto;
@@ -217,12 +224,7 @@ h1, h2, p {
 .discount-image {
     height: 780px;
 }
-.string h2 {
-    font-size: 46.664px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;   
-}
+
 .string p {
     font-size: 24px;
     color: rgb(255, 255, 255);
@@ -247,9 +249,51 @@ h1, h2, p {
     background-color: rgb(222, 179, 126);
 }
 
+.hiking-mountains {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(127, 119, 112);
+    opacity: 0.8;
+    height: 612px;
+}
+
+.shadow {
+    align-self: center;
+}
+.shadow img {
+    width: 450px;
+    height: 410px;  
+}
+
+.hiking-text {
+    
+}
+
+.hiking-text h2 {
+    padding-top: 320px;
+    }
+    
+    .hiking-text p{
+        padding-top: 44px;
+        color: white;
+        
+    }
+
 
 /*
 
+
+
+.Rectangle_ {
+  
+  
+  position: absolute;
+  left: 1px;
+  top: 3731px;
+  width: 1440px;
+  
+  z-index: 90;
+}
 
   
 
