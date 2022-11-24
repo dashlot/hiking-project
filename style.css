@@ -367,10 +367,88 @@ font-style: italic;
     justify-self: center;
     margin-top: 48px;
 }
+
+.subscribe {
+    background-color: rgb(222, 179, 126);
+    height: 637px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    
+}
+.sub-title {
+    align-self: flex-end;
+    justify-self: center;
+    grid-row: 3;
+
+}
+
+.sub-body {
+    align-self: center;
+    justify-self: center;
+    grid-row: 4;
+    font-size: 20px;
+    color: rgb(84, 82, 79);
+    line-height: 1.2;
+    width: 600px;
+    text-align: center;
+    padding-top: 53px;
+    
+}
+
+.sub-input {
+    align-self: flex-start;
+    justify-self: center;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 100px 1fr;
+    padding-top: 60px;
+    
+}
+
+.child1 input {
+    background-color: rgb(255, 255, 255);
+    width: 527px;
+    height: 50.4px;
+    border-radius: 30px;
+    border: 0px;
+    padding-left: 20px;
+}
+
+.child2 input {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    background-color: rgb(84, 82, 79);
+    width: 177.6px;
+    height: 50.4px;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
 /*
 
+.Subscribe {
 
+    .Shape {
   
+  position: absolute;
+  left: 889px;
+  top: 6871px;
+  
+  z-index: 44;
+}
+
+  left: 987.257px;
+  top: 6901.3px;
+  z-index: 45;
+}
+
+
+
+
  
 
 

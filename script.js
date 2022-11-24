@@ -21,9 +21,18 @@
 // }
 
 window.onload = function() {
-    let item = document.getElementsByClassName("but")[0]; 
+    let item = document.querySelector('.letsgo-button form button');
     item.addEventListener('click', function() {
         const divPhrase = document.querySelector(".phrase");
         divPhrase.innerHTML = "<p>Please</p>"
     })
+}
+
+window.onload = function() {
+    let subscribe = document.querySelector('.child2 form input');
+    subscribe.addEventListener('click', function() {
+        alert("Suckmydick")
+    }
+    
+    )
 }
