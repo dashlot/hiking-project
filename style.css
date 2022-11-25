@@ -167,12 +167,16 @@ h2 {
 }
 
 .card {
-    margin-top: 75px;;
+    margin-top: 75px;
     align-self: center;
     justify-self: center;
     background-color: rgb(127, 119, 112);
+    max-width: 350px;
 }    
 
+.card img {
+    max-width: 350px;
+}
 .card h3 {
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -429,23 +433,6 @@ font-style: italic;
     cursor: pointer;
 }
 /*
-
-.Subscribe {
-
-    .Shape {
-  
-  position: absolute;
-  left: 889px;
-  top: 6871px;
-  
-  z-index: 44;
-}
-
-  left: 987.257px;
-  top: 6901.3px;
-  z-index: 45;
-}
-
 
 
 

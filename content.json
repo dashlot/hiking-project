@@ -1,5 +1,21 @@
 {
-    "img": "https://www.w3schools.com/images/colorpicker2000.png",
-    "title": "Spectre",
-    "text": "It's beautiful brilliant spectre image"
+    "key": "value",
+    "key2": "value2",
+    "cards": [
+        {
+            "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hiking-quotes-1586278882.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*", 
+            "title": "Lorem ipsum",
+            "text": "It's beautiful brilliant nature. Explore it!"},
+        {
+            "img": "https://www.bergans.com/pub_images/original/1fasthiking.jpg", 
+            "title": "Lorem ipsum",
+            "text": "It's astonished air. Smell it!"
+        },
+        {
+            "img": "https://www.bergans.com/pub_images/original/fasthiking1.jpg",
+            "title": "Lorem ipsum",
+            "text": "BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla" 
+        }
+
+    ]
 }
