@@ -432,7 +432,26 @@ font-style: italic;
     font-size: 20px;
     cursor: pointer;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: rgb(127, 119, 112);
+    height: 780px;
+    color: white;
+    
+}
+
+.footer div ul li {
+    list-style-type: none;
+} 
+
+.footer-description {
+    align-items: center;
+}
+
 /*
+
 
 
 
