@@ -8,6 +8,11 @@
     src: url(fontOS/OpenSans-ExtraBold.ttf)
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(fontOS/Montserrat-VariableFont_wght.ttf)
+}
+
 * {
     box-sizing: border-box;
     font-family: "Open Sans";
@@ -15,6 +20,10 @@
 
 h1, h2, h3, h4, p {
     margin: 0px;
+}
+
+ul {
+    padding: 0;
 }
 
 h2 {
@@ -438,19 +447,59 @@ font-style: italic;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     background-color: rgb(127, 119, 112);
     height: 780px;
-    color: white;
-    
+    color: white;    
+}
+
+.footer h4 {
+    font-size: 22.2px;
+    font-family: "Montserrat";
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 24px;
 }
 
 .footer div ul li {
     list-style-type: none;
 } 
 
-.footer-description {
-    align-items: center;
+
+.footer p, li {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
 }
 
+.icons {
+    padding-top: 23px;
+}
+
+.icons img {
+    padding-left: 10px;
+}
+
+.footer li {
+    line-height: 1.5;
+}
+
+.column {
+    align-self: center;
+}
+
+.column a {
+    text-decoration: none;
+    color: white;
+}
+
+.first {
+    max-width: 500px;
+    padding-left: 70px;
+}
 /*
+
+
 
 
 
