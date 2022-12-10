@@ -21,8 +21,16 @@ window.onload = function(){
     callTheButton.addEventListener('click', function() {
         // here (add icon)
 
-        let randomInt = Math.floor(Math.random() * 6);
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        let randomInt = getRandomInt(0, 6);
         let url = arrayUrls[randomInt];
+        
+        
         $.get(url, function( response ) {
             // here disappear (icon)
             let jsonContent = response.cards;            
