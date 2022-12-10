@@ -1,0 +1,21 @@
+{
+    "key": "value",
+    "key2": "value2",
+    "cards": [
+        {
+            "img": "https://www.bergans.com/pub_images/original/fasthikin3.jpg", 
+            "title": "Content 10",
+            "text": "It's beautiful brilliant nature. Explore it!"},
+        {
+            "img": "https://www.bergans.com/admin/pub_images/original/Skalljakkesjekk_2.jpg?102586", 
+            "title": "Content 11",
+            "text": "It's astonished air. Smell it!"
+        },
+        {
+            "img": "https://www.bergans.com/admin/pub_images/original/Skalljakkesjekk_3.jpg?176941",
+            "title": "Content 12",
+            "text": "BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla" 
+        }
+
+    ]
+}

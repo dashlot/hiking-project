@@ -1,0 +1,23 @@
+{
+    "key": "value",
+    "key2": "value2",
+    "cards": [
+        {
+            "img": "https://www.bergans.com/se/pub_images/original/fasthikingheader.jpg", 
+            "title": "Content 7",
+            "text": "It's beautiful brilliant nature. Explore it!"},
+        {
+            "img": "https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", 
+            "title": "Content 8",
+            "text": "It's astonished air. Smell it!"
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1586022045497-31fcf76fa6cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "title": "Content 9",
+            "text": "BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla" 
+        }
+
+    ]
+}
+
+ 

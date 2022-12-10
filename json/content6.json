@@ -1,0 +1,21 @@
+{
+    "key": "value",
+    "key2": "value2",
+    "cards": [
+        {
+            "img": "https://throneandvine.com/wp-content/uploads/2022/10/seceda-hike.jpg", 
+            "title": "Content 16",
+            "text": "It's beautiful brilliant nature. Explore it!"},
+        {
+            "img": "https://ridestoremagazine.imgix.net/http%3A%2F%2Fwordpress-604950-1959020.cloudwaysapps.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fbenefits-of-hiking-ridestore-magazine.jpg?ixlib=gatsbySourceUrl-1.6.9&auto=format%2Ccompress&crop=faces%2Centropy&fit=crop&w=689&h=689&s=0ea842df3eeb698907b362083e2e9191", 
+            "title": "Content 17",
+            "text": "It's astonished air. Smell it!"
+        },
+        {
+            "img": "https://ridestoremagazine.imgix.net/http%3A%2F%2Fwordpress-604950-1959020.cloudwaysapps.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fweb-version-jon02252-v2.jpg?ixlib=gatsbySourceUrl-1.6.9&auto=format%2Ccompress&w=689&h=861&s=2a01d3f4ed3097e2ecb71ff2f3d56828",
+            "title": "Content 18",
+            "text": "BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla" 
+        }
+
+    ]
+}
