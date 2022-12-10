@@ -1,65 +1,52 @@
-function fillCardFromJson(jsonObject) {
-    let result =
-    '<div class="card">'+
-        '<img src="' + jsonObject.img + '">'+
-        '<h3>' + jsonObject.title + '</h3>'+
-        '<p>' + jsonObject.text + '</p>'+
-    '</div>';
+function addContentFromJson(jsonObject) {
+    let result = 
+        `<div class="card">
+            <img src="${jsonObject.img}">
+            <h3>${jsonObject.title}</h3>
+            <p>${jsonObject.text}</p>
+        </div>`
     return result
-}
+};
 
+window.onload = function(){ 
+    let arrayUrls = [];
+    arrayUrls[0] = "https://run.mocky.io/v3/59e20ba9-3eed-4bc9-aa63-a0bd5a67b08c";
+    arrayUrls[1] = "https://run.mocky.io/v3/1533fe10-19c9-437f-a55d-9a8dc19e55a5";
+    arrayUrls[2] = "https://run.mocky.io/v3/818216d9-a8ba-42b6-bf4e-5c357ec79a8e";
+    arrayUrls[3] = "https://run.mocky.io/v3/1448fcbd-6dff-4f23-9d2d-96c922570b80";
+    arrayUrls[4] = "https://run.mocky.io/v3/40699510-f46e-4b4d-b088-24f98cbd873d";
+    arrayUrls[5] = "https://run.mocky.io/v3/5dff2a11-7e41-4769-b0be-04d81b10857d";
 
+    let callTheButton = document.querySelector('.button form button');
+    callTheButton.addEventListener('click', function() {
+        // here (add icon)
 
-window.onload = function() {
-    const caller = document.querySelector('.button form button');
-    caller.addEventListener('click', function() {
-        let jsonContent = [];
-
-        jsonContent[0] = {
-            img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hiking-quotes-1586278882.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*",
-            title: "Lorem ipsum",
-            text: "It's beautiful brilliant nature."
-        };
-        jsonContent[1] = {
-            img: "https://www.bergans.com/pub_images/original/1fasthiking.jpg", 
-            title: "Lorem ipsum",
-            text: "It's astonished air. Smell it!"
-        }
-        jsonContent[2] = {
-            img: "https://www.bergans.com/pub_images/original/fasthiking1.jpg",
-            title: "Lorem ipsum",
-            text: "BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla" 
-        }
-
-        for (let i = 0; i < 3; i++) {
-            const divContent = document.querySelector('.cards.extra');
-            divContent.innerHTML += fillCardFromJson(jsonContent[i]);
-        }
-
-        // const divContent = document.querySelector('.content1');
-        // // const elem0 = jsonContent[0];
-        // divContent.innerHTML = fillCardFromJson(jsonContent[0]);
-
-
-        // const divContent2 = document.querySelector('.content2');
-        // const elem1 = jsonContent[1];
-        //     divContent2.innerHTML = fillCardFromJson(elem1);
-        
-        // const divContent3 = document.querySelector('.cards.extra');
-        //     divContent3.innerHTML =
-        // '<div class="card">'+ 
-        //     '<img src="' + jsonContent[2].img + '">'+
-        //     '<h3>'+ jsonContent[2].title + '</h3>'+
-        //     '<p>' + jsonContent[2].text + '</p>'+
-        // '</div>'
-    });
+        let randomInt = Math.floor(Math.random() * 6);
+        let url = arrayUrls[randomInt];
+        $.get(url, function( response ) {
+            // here disappear (icon)
+            let jsonContent = response.cards;            
+            for(let i = 0; i<3; i++) {
+                let divContent = document.querySelector('.cards.extra');
+                divContent.innerHTML += addContentFromJson(jsonContent[i]);        
+            }  
+        })   
+    })
     
     let subscribe = document.querySelector('.child2 form input');
     subscribe.addEventListener('click', function() {
         alert("Suckmydick")
-        }
-    )
-//     debugger;
+        })
+    
+    let getCity = document.querySelector('.discount-text form button');
+    getCity.addEventListener('click', function() {
+        $.get( "http://ip-api.com/json", function( data ) {
+            let divCity = document.querySelector('#city-from-api');
+            divCity.innerHTML = `<p>${data.city}</p>`
+        });
+    })
 }
+
+
 
 
