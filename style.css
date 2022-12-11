@@ -208,7 +208,14 @@ h2 {
     padding-bottom: 72px;
 }
 
-.letsgo div form button {
+#loading-icon {
+    font-size: 40px;
+    color:#54524f;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.button form button {
     font-size: 23px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -219,10 +226,10 @@ h2 {
     height: 60px;
     border-radius: 30px;
     border: 0px;
-    cursor: pointer;   
+    cursor: pointer;  
 }
 
-.letsgo form {
+.button form {
     text-align: center;
 }
 
