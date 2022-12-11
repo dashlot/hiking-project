@@ -19,6 +19,9 @@ window.onload = function(){
 
     let callTheButton = document.querySelector('.button form button');
     callTheButton.addEventListener('click', function() {
+        let loadingIcon = document.querySelector('#loading-icon')
+        loadingIcon.innerHTML = `<i class="fa-solid fa-spinner"></i>`
+        console.log("show")
         // here (add icon)
 
         function getRandomInt(min, max) {
@@ -32,7 +35,7 @@ window.onload = function(){
         
         
         $.get(url, function( response ) {
-            // here disappear (icon)
+            loadingIcon.innerHTML = `<p></p>`
             let jsonContent = response.cards;            
             for(let i = 0; i<3; i++) {
                 let divContent = document.querySelector('.cards.extra');
