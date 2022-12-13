@@ -208,12 +208,27 @@ h2 {
     padding-bottom: 72px;
 }
 
-.card button {
-    font-size: 150%;
-    margin: 1em 4rem;
+
+.like-dislike {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+    padding-bottom: 1.5em;
+    
+    
 }
 
-.card button i {
+.like {
+    justify-self: flex-end;
+}
+
+.dislike {
+    justify-self: flex-start;
+    
+}
+
+.like-dislike button i {
+    font-size: 150%;
     color:#54524f;
 }
 
