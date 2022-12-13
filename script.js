@@ -4,16 +4,24 @@ function addContentFromJson(jsonObject) {
             <img src="${jsonObject.img}">
             <h3>${jsonObject.title}</h3>
             <p>${jsonObject.text}</p>
-            <button type="button"><i class="fa-regular fa-thumbs-up"></i></button>
-            <button type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+            <div class="like-dislike">
+                <div class="like">
+                    <button type="button" class="like-button"><i class="fa-regular fa-thumbs-up"></i></button>
+                    </div>
+                <div class="dislike">
+                    <button type="button" class="like-button"><i class="fa-regular fa-thumbs-down"></i></button>
+                </div>
+
         </div>`
     return result
 };
 
 window.onload = function(){ 
-    
-    
-    
+    let likeButton = $('#like-button');
+    likeButton.on('click', function () {
+
+    })
+        
     let arrayUrls = [];
     arrayUrls[0] = "https://run.mocky.io/v3/59e20ba9-3eed-4bc9-aa63-a0bd5a67b08c";
     arrayUrls[1] = "https://run.mocky.io/v3/1533fe10-19c9-437f-a55d-9a8dc19e55a5";
