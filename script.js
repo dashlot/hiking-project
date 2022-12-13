@@ -5,23 +5,27 @@ function addContentFromJson(jsonObject) {
             <h3>${jsonObject.title}</h3>
             <p>${jsonObject.text}</p>
             <div class="like-dislike">
-                <div class="like">
-                    <button type="button" class="like-button"><i class="fa-regular fa-thumbs-up"></i></button>
+                    <div class="like">
+                        <button type="button"><i class="fa-regular fa-thumbs-up"></i></button>
                     </div>
-                <div class="dislike">
-                    <button type="button" class="like-button"><i class="fa-regular fa-thumbs-down"></i></button>
+                    <div class="dislike">
+                        <button type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+                    </div>
                 </div>
-
-        </div>`
+            </div>
+            `
     return result
 };
 
-window.onload = function(){ 
-    let likeButton = $('#like-button');
-    likeButton.on('click', function () {
-
+$('.like button').click(function() {
+    alert("You like it!")
     })
-        
+
+$('.dislike button').click(function() {
+    alert("You dislike it!")
+})
+
+window.onload = function(){ 
     let arrayUrls = [];
     arrayUrls[0] = "https://run.mocky.io/v3/59e20ba9-3eed-4bc9-aa63-a0bd5a67b08c";
     arrayUrls[1] = "https://run.mocky.io/v3/1533fe10-19c9-437f-a55d-9a8dc19e55a5";
@@ -29,7 +33,7 @@ window.onload = function(){
     arrayUrls[3] = "https://run.mocky.io/v3/1448fcbd-6dff-4f23-9d2d-96c922570b80";
     arrayUrls[4] = "https://run.mocky.io/v3/40699510-f46e-4b4d-b088-24f98cbd873d";
     arrayUrls[5] = "https://run.mocky.io/v3/5dff2a11-7e41-4769-b0be-04d81b10857d";
-
+    
     let callTheButton = $('.button form button');
     callTheButton.on('click', function() {
         let loadingIcon = $('#loading-icon')
@@ -55,6 +59,14 @@ window.onload = function(){
                 jqObj.html(newCon);
             }  
         })
+
+        $('.like button').click(function() {
+        alert("You like it!")
+    })
+    
+    $('.dislike button').click(function() {
+        alert("You dislike it!")
+    })
     })
 
     let subscribe = $('.child2 form input');
