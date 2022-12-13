@@ -4,11 +4,16 @@ function addContentFromJson(jsonObject) {
             <img src="${jsonObject.img}">
             <h3>${jsonObject.title}</h3>
             <p>${jsonObject.text}</p>
+            <button type="button"><i class="fa-regular fa-thumbs-up"></i></button>
+            <button type="button"><i class="fa-regular fa-thumbs-down"></i></button>
         </div>`
     return result
 };
 
 window.onload = function(){ 
+    
+    
+    
     let arrayUrls = [];
     arrayUrls[0] = "https://run.mocky.io/v3/59e20ba9-3eed-4bc9-aa63-a0bd5a67b08c";
     arrayUrls[1] = "https://run.mocky.io/v3/1533fe10-19c9-437f-a55d-9a8dc19e55a5";
@@ -17,13 +22,10 @@ window.onload = function(){
     arrayUrls[4] = "https://run.mocky.io/v3/40699510-f46e-4b4d-b088-24f98cbd873d";
     arrayUrls[5] = "https://run.mocky.io/v3/5dff2a11-7e41-4769-b0be-04d81b10857d";
 
-    let callTheButton = document.querySelector('.button form button');
-    callTheButton.addEventListener('click', function() {
-        let loadingIcon = document.querySelector('#loading-icon')
-        loadingIcon.innerHTML = `<i class="fa-solid fa-spinner"></i>`
-        console.log("show")
-        // here (add icon)
-
+    let callTheButton = $('.button form button');
+    callTheButton.on('click', function() {
+        let loadingIcon = $('#loading-icon')
+        loadingIcon.html(`<i class="fa-solid fa-spinner"></i>`)
         function getRandomInt(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
@@ -35,25 +37,28 @@ window.onload = function(){
         
         
         $.get(url, function( response ) {
-            loadingIcon.innerHTML = `<p></p>`
+            loadingIcon.html(`<p></p>`);
             let jsonContent = response.cards;            
             for(let i = 0; i<3; i++) {
-                let divContent = document.querySelector('.cards.extra');
-                divContent.innerHTML += addContentFromJson(jsonContent[i]);        
+                let jqObj = $('.cards.extra');
+                let oldCon = jqObj.html();
+                let newCon = oldCon +
+                addContentFromJson(jsonContent[i])
+                jqObj.html(newCon);
             }  
-        })   
+        })
+    })
+
+    let subscribe = $('.child2 form input');
+    subscribe.on('click', function() {
+        alert("Suckmydick");
     })
     
-    let subscribe = document.querySelector('.child2 form input');
-    subscribe.addEventListener('click', function() {
-        alert("Suckmydick")
-        })
-    
-    let getCity = document.querySelector('.discount-text form button');
-    getCity.addEventListener('click', function() {
+    let getCity = $('.discount-text form button');
+    getCity.on('click', function() {
         $.get( "http://ip-api.com/json", function( data ) {
-            let divCity = document.querySelector('#city-from-api');
-            divCity.innerHTML = `<p>${data.city}</p>`
+            let divCity = $('#city-from-api');
+            divCity.html(`<p>${data.city}</p>`); 
         });
     })
 }
