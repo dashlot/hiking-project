@@ -64,11 +64,13 @@ window.onload = function(){
 
             console.log('before like button adding click handler')
             $('.like button').unbind().click(function() {
-                alert("You like it!")
+                countOfLikes +=1;
+                console.log(`Likes = ${countOfLikes}`);
             })
             
             $('.dislike button').unbind().click(function() {
-                alert("You dislike it!")
+                countOfDislikes +=1;
+                console.log(`Dislikes = ${countOfDislikes}`);
             })
         })
 
