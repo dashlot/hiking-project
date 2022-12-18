@@ -26,17 +26,28 @@ window.onload = function(){
     arrayUrls[4] = "https://run.mocky.io/v3/40699510-f46e-4b4d-b088-24f98cbd873d";
     arrayUrls[5] = "https://run.mocky.io/v3/5dff2a11-7e41-4769-b0be-04d81b10857d";
     
-    let NumberOfLikes = 0;
+    let numberLike = 0;
     let countOfDislikes = 0;
 
-    let funCountLikes = function countLikes() {
-        NumberOfLikes +=1;
-        console.log(`Likes = ${NumberOfLikes}`);
-    }
+    let buttonlike = $(this).attr('data-likes')
+    buttonlike.click(function() {
+        numberLike +=1;
+        console.log(`Likes = ${numberLike}`)
+        }
+    )
 
-    $('.like button').data('firstLike').click(funCountLikes);
-    $('.like button').data('secondLike').click(funCountLikes);
-    $('.like button').data('thirdLike').click(funCountLikes);
+
+
+    // let funCountLikes = function countLikes() {
+    //     NumberOfLikes +=1;
+    //     console.log(`Likes = ${NumberOfLikes}`);
+    // }
+
+
+
+    // $('.like button').data('firstLike').click(funCountLikes);
+    // $('.like button').data('secondLike').click(funCountLikes);
+    // $('.like button').data('thirdLike').click(funCountLikes);
 
     
 
