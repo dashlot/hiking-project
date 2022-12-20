@@ -1,3 +1,12 @@
+function getCantimetersFromMetres (metres) {
+    debugger;
+    let centimetres = metres * 100;
+    console.log(centimetres);
+    return centimetres;
+}
+
+getCantimetersFromMetres(9);
+
 function addContentFromJson(jsonObject) {
     let result = 
         `<div class="card">
@@ -6,10 +15,10 @@ function addContentFromJson(jsonObject) {
             <p>${jsonObject.text}</p>
             <div class="like-dislike">
                     <div class="like">
-                        <button type="button"><i class="fa-regular fa-thumbs-up"></i></button>
+                        <button type="button" data-likes="0"><i class="fa-regular fa-thumbs-up"></i></button>
                     </div>
                     <div class="dislike">
-                        <button type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+                        <button type="button" data-likes="0"><i class="fa-regular fa-thumbs-down"></i></button>
                     </div>
                 </div>
             </div>
@@ -26,33 +35,27 @@ window.onload = function(){
     arrayUrls[4] = "https://run.mocky.io/v3/40699510-f46e-4b4d-b088-24f98cbd873d";
     arrayUrls[5] = "https://run.mocky.io/v3/5dff2a11-7e41-4769-b0be-04d81b10857d";
     
-    let numberLike = 0;
+    
+    
+    
+    
+    
     let countOfDislikes = 0;
 
-    let buttonlike = $(this).attr('data-likes')
-    buttonlike.click(function() {
-        numberLike +=1;
-        console.log(`Likes = ${numberLike}`)
-        }
-    )
+    let funCountLikes = function countLikes() {
+        let $thisButton = $(this);
+        let likesStr = $thisButton.attr('data-likes');
+        let likesNumber = parseInt(likesStr);
+        // number +=1;
+        likesNumber = likesNumber + 1;
+        $thisButton.attr('data-likes', "" + likesNumber);
+        console.log(`Likes = ${likesNumber}`); 
+    } 
+
+    $('.like button').on('click', funCountLikes)
 
 
 
-    // let funCountLikes = function countLikes() {
-    //     NumberOfLikes +=1;
-    //     console.log(`Likes = ${NumberOfLikes}`);
-    // }
-
-
-
-    // $('.like button').data('firstLike').click(funCountLikes);
-    // $('.like button').data('secondLike').click(funCountLikes);
-    // $('.like button').data('thirdLike').click(funCountLikes);
-
-    
-
-
-    // $('.like button.dataset.like').click(funCountLikes)
 
     let funCountDislakes = function countDislikes() {
         countOfDislikes +=1;
@@ -84,10 +87,10 @@ window.onload = function(){
                 jqObj.html(newCon);
             } 
 
-            console.log('before like button adding click handler')
-            $('.like button').unbind().click(funCountLikes)
+            console.log('before like button adding click handler');
+            $('.like button').unbind().click(funCountLikes);
             
-            $('.dislike button').unbind().click(funCountDislakes)
+            $('.dislike button').unbind().click(funCountDislakes);
         })
 
     })
@@ -107,6 +110,7 @@ window.onload = function(){
 
     })
 }
+
 
 
 
